@@ -147,6 +147,19 @@ HUGO_ENV=production hugo
 If you find a bug or have an idea for a feature, feel free to use the [issue tracker](https://github.com/budparr/gohugo-theme-ananke/issues) to let me know.
 
 
+## Changes in this fork
+
+### Internationalization 
+This theme comes in english and german. To switch languages set the `DefaultContentLanguage` to `en` or `de`. To add a translation have a look into the `i18n` directory and send me a pull-request.
+
+The format for dates is read from `Site.Params.DateFormat`. To change it to ISO add
+
+```toml
+[params]
+  DateFormat = "2006-02-01"
+```
+
+to `config.toml`.
 
 
 TODO:
