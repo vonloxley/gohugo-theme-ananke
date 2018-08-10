@@ -150,7 +150,7 @@ If you find a bug or have an idea for a feature, feel free to use the [issue tra
 ## Changes in this fork
 
 ### Internationalization 
-This theme comes in english and german. To switch languages set the `DefaultContentLanguage` to `en` or `de`. To add a translation have a look into the `i18n` directory and send me a pull-request.
+This theme comes in English and German. To switch languages set the `DefaultContentLanguage` to `en` or `de`. To add a translation have a look into the `i18n` directory and send me a pull-request.
 
 The format for dates is read from `Site.Params.DateFormat`. To change it to ISO add
 
@@ -160,6 +160,11 @@ The format for dates is read from `Site.Params.DateFormat`. To change it to ISO 
 ```
 
 to `config.toml`.
+
+### Default featured image
+The `.Site-Params.featured_image` is used as a fallback on every page that doesn’t define its own featured image. If you don’t want this behaviour declare `featured_image: false` in the header.
+
+The home-page uses the default featured image as teaser image for articles without `featured_image`
 
 
 TODO:
