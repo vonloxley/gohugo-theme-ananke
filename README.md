@@ -166,6 +166,14 @@ The `.Site-Params.featured_image` is used as a fallback on every page that doesn
 
 The home-page uses the default featured image as teaser image for articles without `featured_image`
 
+### Footer-menu
+You can define a `[[menu.footer]]` in config.toml that will be placed in the footer.
+
+```toml
+[[menu.footer]]
+  name = "Impressum"
+  url = "/impressum"
+```
 
 TODO:
 
